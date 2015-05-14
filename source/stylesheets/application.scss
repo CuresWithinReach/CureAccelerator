@@ -17,8 +17,3 @@
 
 // Base
 @import "base/base";
-
-
-body{
-  @include outer-container;
-}
