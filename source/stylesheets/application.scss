@@ -17,3 +17,8 @@
 
 // Base
 @import "base/base";
+
+html {
+  background-color: $blue-base;
+  height: 100vh;
+}
