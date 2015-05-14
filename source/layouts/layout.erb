@@ -1,19 +1,24 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <!-- Meta Data -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-
-    <!-- Use title if it's in the page YAML frontmatter -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
     <title><%= current_page.data.title || "The Middleman" %></title>
 
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
+    <!-- Stylesheets -->
+    <%= stylesheet_link_tag "application" %>
+
+    <!-- Javascript -->
+    <script src="//use.typekit.net/rts7ick.js" async=""></script>
   </head>
 
   <body class="<%= page_classes %>">
-    <%= yield %>
+    <main class="view-container">
+      <%= yield %>
+    </main>
+    <%= javascript_include_tag  "application" %>
   </body>
+
 </html>
