@@ -1,0 +1,1 @@
+$(function(){$(".topbar");$(function(){$(".dropdown-trigger").on("click",function(n){n.preventDefault(),$(this).siblings(".sub-menu").toggleClass("is-active")})}),$(function(){$(".js-menu-trigger,.js-menu-screen").on("click touchstart",function(n){n.preventDefault(),$(".js-menu,.js-menu-screen").toggleClass("is-visible")})})});
