@@ -43,7 +43,7 @@ $headers: (
 
 // Homepage Header styles
 .home-header{
-  @include rem(padding, 125px 10px);
+  @include rem(padding, 90px 10px);
   background: transparent image-url('map-img.png') 50% 50% no-repeat;
   background-color: #FAFAF7;
   background-size: contain;

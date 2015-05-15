@@ -1,0 +1,45 @@
+// Card Component
+// ========================================
+
+
+// Card Variables
+$card-background-color: $white-base;
+$card-border-radius:    2px;
+$card-margin:           30px 0;
+$card-padding:          20px;
+$card-shadow-color:     rgba(0, 0, 0, 0.25);
+$card-shadow-spread:    0 0 10px;
+
+
+// Card Styles
+.card{
+  @include box-shadow($card-shadow-spread, $card-shadow-color);
+  @include rem(margin, $card-margin);
+  @include rem(padding, $card-padding);
+  @include transition(all 0.2s ease-in-out);
+  background: $card-background-color;
+  border-radius: $card-border-radius;
+  text-align: center;
+
+  &.one-third{ @include span-columns(4 of 12); }
+
+  &.hover:hover{
+    @include box-shadow(0 0 5px, rgba(0, 0, 0, 0.15));
+    opacity: 1;
+  }
+}
+
+// User Card types
+$users: (
+  ('green',        $green-base  )
+  ('green-alt-1',  $green-alt-1 )
+  ('purple',       $purple-base )
+);
+
+@each $user in $users {
+  $type:  nth($user, 1);
+  $color: nth($user, 2);
+
+  .card--title__#{$type}{ @include rem(margin-top, 20px); color: $color; }
+  .card--border__#{$type}{ border-bottom: 1px solid $color; }
+};

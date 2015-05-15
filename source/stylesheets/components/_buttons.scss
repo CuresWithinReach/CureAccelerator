@@ -5,17 +5,14 @@
 .button{
   @include font-type($primary-sans-serif, normal, 700);
   @include position(relative, null null null null);
-  @include s-echo;
+  @include s-foxtrot;
   @include rem(padding, 10px 12px);
   @include transition (all 0.3s ease-in-out);
   border-radius: 2px;
   display: inline-block;
   line-height: normal;
-  text{
-    align: center;
-    decoration: none;
-    transform: uppercase;
-  }
+  text-align: center;
+  text-transform: uppercase;
   -webkit-appearance: none;
 
   &:hover{ cursor: pointer; opacity: 1; }
@@ -72,5 +69,19 @@
   .link__underline{
     text-decoration: underline;
     &:hover{ text-decoration: underline; }
+  }
+}
+
+
+// Button List Styles
+.button-list{
+  @include span-columns(12 of 12);
+  text-align: center;
+
+  li{ display: inline; }
+
+  li > a{
+    @include rem(min-width, 135px);
+    display: inline-block;
   }
 }

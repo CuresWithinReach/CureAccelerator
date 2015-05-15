@@ -20,7 +20,9 @@
     <main class="view-container">
       <%= partial 'components/topbar' %>
       <%= yield %>
+      <%= partial 'components/cta' %>
     </main>
+    <%= partial 'components/footer' %>
     <script> document.createElement( "picture" );</script>
     <%= javascript_include_tag  "application" %>
   </body>
