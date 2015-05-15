@@ -14,6 +14,7 @@
   text{
     align: center;
     decoration: none;
+    transform: uppercase;
   }
   -webkit-appearance: none;
 
@@ -43,8 +44,8 @@
     }
 
     &:active{
-      background-color: darken($bg-1, 8%);
-      color: darken($bg-1, 10%);
+      background-color: darken($bg-1, 3%);
+      color: darken($bg-1, 5%);
     }
 
     &:focus{ @include box-shadow(0 0 0, transparent); border: none; }
@@ -52,14 +53,24 @@
 
   .button--header{
     @include box-shadow(0 0 10px, rgba(0, 0, 0, 0.25));
+    @include rem(margin, 15px auto);
+    @include rem(padding, 15px 35px);
+    text-transform: uppercase;
+
     &:hover{ @include box-shadow(0 0 0, rgba(0, 0, 0, 0)); }
   }
+
 
   // Links
   .link-#{$type}{
     @include s-golf;
     color: $bg-1;
 
-    &:hover{ opacity: 0.6 }
+    &:hover{ opacity: 0.6; }
+  }
+
+  .link__underline{
+    text-decoration: underline;
+    &:hover{ text-decoration: underline; }
   }
 }

@@ -1,0 +1,54 @@
+// Page Headers
+// ========================================
+
+
+// Page Header types
+$headers: (
+  ('brown',  $brown-base,   $brown-dark,   $brown-dark)
+  ('green',  $green-base,   $green-dark,   $green-dark)
+  ('purple', $purple-base,  $purple-dark,  $purple-dark)
+);
+
+
+// Page Header structure
+.page-header{
+  @include clearfix;
+
+  @each $header in $headers{
+    $type:   nth($header, 1);
+    $bg-1:   nth($header, 2);
+    $bg-2:   nth($header, 3);
+    $border: nth($header, 4);
+
+    &.header--#{$type} {
+      @include linear-gradient(to top, $bg-1, $bg-2);
+      border-top: 1px solid $border;
+    }
+  }
+}
+
+
+// Page Header styles
+.header-content__container{
+  @include span-columns(8 of 12);
+  @include shift(2 of 12);
+  @include rem(padding, 20px 10px);
+
+  .header-content__description{
+    @include span-columns(6 of 8);
+    @include shift(1 of 8);
+  }
+}
+
+
+// Homepage Header styles
+.home-header{
+  @include rem(padding, 125px 10px);
+  background: transparent image-url('map-img.png') 50% 50% no-repeat;
+  background-color: #FAFAF7;
+  background-size: contain;
+  border-top: 1px solid $white-dark;
+  text-align: center;
+
+  .title{ @include text-shadow(0 5px 10px, rgba(0, 0, 0, 0.15)); }
+}

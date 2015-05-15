@@ -1,0 +1,43 @@
+<header class="topbar" role="topbar">
+  <nav class="navigation" role="site navigation">
+    <div class="navigation--left">
+      <a href="#" class="mobile--link mobile--show js-menu-trigger sliding-menu-buton">
+        <i><%= image_tag 'icons/menu-icon.svg', class: 'mobile--show' %></i>
+      </a>
+      <a href="/">
+        <picture>
+          <source srcset="images/logos/logo.png 1x, images/logos/logo_2x.png 2x" />
+          <%= image_tag 'logos/logo.png', alt: 'Cure Accelerator', class: 'logo' %>
+        </picture>
+      </a>
+    </div>
+    <div class="js-menu mobile--panel">
+      <ul class="navigation--right">
+        <picture class="mobile--show">
+          <source srcset="images/logos/logo.png 1x, images/logos/logo_2x.png 2x" />
+          <%= image_tag 'logos/logo.png', alt: 'Cure Accelerator', class: 'logo' %>
+        </picture>
+        <li>
+          <% link_to '#', class: 'dropdown-trigger mobile--hide' do %>
+            Community <%= image_tag 'icons/dropdown-icon.svg', class: 'icon' %>
+          <% end %>
+          <ul class="sub-menu">
+            <li><%= link_to 'Clinicans', '#' %></li>
+            <li><%= link_to 'Researchers', '#' %></li>
+            <li><%= link_to 'Funders', '#' %></li>
+          </ul>
+        </li>
+        <div class="mobile--show">
+          <li><%= link_to 'Clinicans', '#', class: 'mobile--show' %></li>
+          <li><%= link_to 'Researchers', '#', class: 'mobile--show' %></li>
+          <li><%= link_to 'Funders', '#', class: 'mobile--show' %></li>
+        </div>
+        <li><%= link_to 'FAQ', '#' %></li>
+        <li><%= link_to 'Contact', '#' %></li>
+        <li><%= link_to 'Sign In', '#' %></li>
+        <li><%= link_to 'Sign Up', '#', class: 'button button--primary' %></li>
+      </ul>
+    </div>
+    <div class="js-menu-screen mobile--panel__fade-screen"></div>
+  </nav>
+</header>

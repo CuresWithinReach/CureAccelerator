@@ -1,0 +1,26 @@
+{
+  "name": "CureAccelerator",
+  "version": "1.0.0",
+  "homepage": "cureaccelerator.org",
+  "authors": [
+    "LaunchPad Lab"
+  ],
+  "description": "CureAccelerator marketing website",
+  "main": "index.html",
+  "keywords": [
+    "health",
+    "care",
+    "repurpose"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}

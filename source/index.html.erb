@@ -1,4 +1,28 @@
 ---
-title: Welcome to Middleman
+title: CureAccelerator
 ---
-<h1>Hello World!</h1>
+<section role="banner" aria-label="repurposing-research" class="page-header home-header">
+  <div class="header-content__container center">
+    <h1 id="repurposing-research" class="title uppercase big">Repurposing</h1>
+    <h3 class="title uppercase">Speed Treatments to patients</h3>
+    <div class="header-content__description">
+      <h4 class="title ">Researchers, funders, clinicians and others harnessing the power of repurposing research</h4>
+    </div>
+    <%= link_to 'Sign Up', 'https://app.cureaccelerator.org', class: 'button button--white button--header' %>
+  </div>
+</section>
+<section class="callout--green">
+  <div class="callout--container">
+    <div class="two-third">
+      <p class="text">More than 7,000 diseases have no fully effective treatment, affecting more than 500 million people worldwide. Thousands of existing drugs and devices have the potential to be repurposed to treat patients waiting for a cure. The CureAccelerator community has the ability to make that happen. <%= link_to 'Get started', 'https://app.cureaccelerator.org', class: 'link__underline' %>, or  <%= link_to 'learn more', '#', class: 'link__underline' %> about repurposing.</p>
+    </div>
+    <div class="divider"></div>
+    <div class="one-third right logo-container">
+      <picture>
+        <source srcset="images/logos/robert-johnson-logo.png 1x, images/logos/robert-johnson-logo_2x.png 2x" />
+        <%= image_tag 'robert-johnson-logo', alt: 'Robert Wood Johnson Foundation' %>
+      </picture>
+      <p class="small footnote-logo"><em>The CureAccelerator platform was built with a grant from the Robert Wood Johnson Foundation</em></p>
+    </div>
+  </div>
+</section>
