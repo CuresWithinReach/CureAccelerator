@@ -21,7 +21,7 @@ $headers: (
     $border: nth($header, 4);
 
     &.header--#{$type} {
-      @include linear-gradient(to top, $bg-1, $bg-2);
+      @include linear-gradient(180deg, $bg-1, $bg-2);
       border-top: 1px solid $border;
     }
   }
@@ -30,14 +30,12 @@ $headers: (
 
 // Page Header styles
 .header-content__container{
-  @include span-columns(8 of 12);
-  @include shift(2 of 12);
+  @include outer-container;
   @include rem(padding, 20px 10px);
 
-  .header-content__description{
-    @include span-columns(6 of 8);
-    @include shift(1 of 8);
-  }
+  @include media($tablet-landscape){ padding: 0; }
+
+  .title__inverse{ color: $white-base; }
 }
 
 
@@ -50,5 +48,16 @@ $headers: (
   border-top: 1px solid $white-dark;
   text-align: center;
 
-  .title{ @include text-shadow(0 5px 10px, rgba(0, 0, 0, 0.15)); }
+  .title{
+    @include span-columns(8 of 12);
+    @include shift(2 of 12);
+    @include text-shadow(0 5px 10px, rgba(0, 0, 0, 0.15));
+  }
+
+  .header-content__description{ @include row; }
+}
+
+// FAQ Header
+.faq-header{
+  @include rem(padding, 150px 10px 20px);
 }

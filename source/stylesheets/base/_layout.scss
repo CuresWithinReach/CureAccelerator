@@ -29,6 +29,7 @@ html, body{ overflow-x: hidden; }
 
 .page-section--container{
   @include outer-container();
+  @include position(relative);
   @include rem(margin, 50px auto 0);
 
   .page-section--header,
@@ -57,4 +58,65 @@ html, body{ overflow-x: hidden; }
 }
 
 .section--tag{ @include rem(margin, 15px 0 30px);
+}
+
+// Sidebar and Column layout
+.sidebar{
+  @include rem(padding, 0 20px);
+  width: 100%;
+
+  @include media($tablet-landscape){
+    @include span-columns(2 of 12);
+    padding: 0;
+
+    &.affixed{
+      @include position(absolute); width: 14.7%;
+      &.is-affixed{ position: fixed; top: 30px; }
+    }
+  }
+
+
+  .scroll-on-page-link{
+    @include rem(margin-bottom, 15px);
+    color: $blue-base;
+    display: block;
+  }
+}
+
+.sidebar-content-container{
+  @include rem(padding, 0 20px);
+  width: 100%;
+
+  @include media($tablet-landscape){
+    @include span-columns(8 of 12);
+    @include shift(4 of 12);
+    padding: 0;
+  }
+}
+
+.sidebar-content--title{
+  @include font-type($primary-sans-serif, normal, 300);
+  @include rem(padding-bottom, 15px);
+  border-bottom: 1px solid $grey-base;
+}
+
+.question-container{
+  @include rem(margin-top, 50px);
+  &.first{ margin-top: 0; }
+}
+
+.question-group{
+  @include rem(margin, 20px auto 0);
+  @include rem(padding, 20px 0);
+  border-bottom: 1px solid $grey-base;
+
+  &.last{ border-bottom: none; }
+
+  a{ @extend .link-primary; }
+
+  li{
+    @extend p;
+    @include rem(margin-left, 20px);
+    list-style-type: disc;
+  }
 }

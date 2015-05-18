@@ -60,7 +60,6 @@
 
   // Links
   .link-#{$type}{
-    @include s-golf;
     color: $bg-1;
 
     &:hover{ opacity: 0.6; }
