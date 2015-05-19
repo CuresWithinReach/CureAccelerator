@@ -3,8 +3,8 @@
 
 
 // Variables
-$role-height: 100px;
-$role-width:  92px;
+$role-height: 130px;
+$role-width:  91.5px;
 $role-icons:  image-url('icons/user-roles-sprite.svg');
 
 
@@ -22,17 +22,18 @@ $role-icons:  image-url('icons/user-roles-sprite.svg');
 
 // List
 $roles: (
-  share         $role-width * 0,
-  peer          $role-width * 1,
-  post          $role-width * 2,
-  global-1      $role-width * 3,
-  personas      $role-width * 4,
-  branding      $role-width * 5,
-  user-stories  $role-width * 6,
-  whiteboarding $role-width * 7,
-  qa            $role-width * 8,
-  hosting       $role-width * 9,
-  security      $role-width * 10
+  share       $role-width * 0,
+  peer        $role-width * 1,
+  post        $role-width * 2,
+  global-1    $role-width * 3,
+  ideas       $role-width * 4,
+  connect     $role-width * 5,
+  support     $role-width * 6,
+  global-2    $role-width * 7,
+  difference  $role-width * 8,
+  benefit     $role-width * 9,
+  work        $role-width * 10,
+  global-3    $role-width * 11
 );
 
 
