@@ -21,6 +21,10 @@ $card-shadow-spread:    0 0 10px;
   border-radius: $card-border-radius;
   text-align: center;
 
+  &.one-half{ @include span-columns(5 of 12);
+    &.shift{ @include shift(1 of 12); }
+    img{ width: 60%; }
+  }
   &.one-third{ @include span-columns(4 of 12); }
 
   &.hover:hover{

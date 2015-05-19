@@ -4,9 +4,9 @@
 
 // Page Header types
 $headers: (
-  ('brown',  $brown-base,   $brown-dark,   $brown-dark)
-  ('green',  $green-base,   $green-dark,   $green-dark)
-  ('purple', $purple-base,  $purple-dark,  $purple-dark)
+  ('green-alt',  $green-alt-1,  $green-alt-2,  $green-alt-1)
+  ('green',      $green-base,   $green-dark,   $green-dark)
+  ('purple',     $purple-base,  $purple-dark,  $purple-dark)
 );
 
 
@@ -58,6 +58,44 @@ $headers: (
 }
 
 // FAQ Header
-.faq-header{
-  @include rem(padding, 150px 10px 20px);
+.faq-header{ @include rem(padding, 150px 10px 20px); }
+
+
+// Role Pages
+.role-page{
+  overflow: hidden;
+
+  .header-content__left{
+    display: none;
+
+    @include media($tablet-landscape){
+      @include span-columns(4 of 12);
+      display: block;
+    }
+  }
+
+  .header-content__right{
+    @include rem(padding, 0 20px);
+    text-align: center;
+
+    @include media($tablet-landscape){
+      @include span-columns(7 of 12);
+      @include shift(1 of 12);
+      margin-top: 12%;
+      text-align: left;
+    }
+
+    p{
+      @include s-delta;
+      line-height: 24px;
+    }
+  }
+
+  .user-role-img{
+    @include rem(margin, 25px auto -5px);
+
+    @include media($tablet-landscape){
+      width: 100%;
+    }
+  }
 }

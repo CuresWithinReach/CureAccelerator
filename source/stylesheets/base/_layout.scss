@@ -34,6 +34,7 @@ html, body{ overflow-x: hidden; }
 
   .page-section--header,
   .page-section--body {
+    @include clearfix;
     text-align: center;
   }
 
@@ -118,5 +119,27 @@ html, body{ overflow-x: hidden; }
     @extend p;
     @include rem(margin-left, 20px);
     list-style-type: disc;
+  }
+}
+
+
+// Grid Layout
+.grid-layout {
+  @include rem(margin-top, 20px);
+
+  .grid-item--title {
+    @include rem(margin-bottom, 5px);
+  }
+
+  .grid-item{
+    @include rem(margin-top, 35px);
+    @include media($tablet){
+      @include span-columns(6 of 12);
+      @include omega(2n);
+    }
+    .user-role-icon {
+      @include rem(margin-right, 20px);
+      float: left;
+    }
   }
 }

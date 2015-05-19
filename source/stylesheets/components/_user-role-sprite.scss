@@ -1,0 +1,48 @@
+// User Role Icons
+// ========================================
+
+
+// Variables
+$role-height: 100px;
+$role-width:  92px;
+$role-icons:  image-url('icons/user-roles-sprite.svg');
+
+
+// Basic Styles
+%role-icon{
+  @include rem(margin-top, -12px);
+  background-image: $role-icons;
+  background-size: 1100px 100px;
+  background-repeat: no-repeat;
+  height: $role-height;
+  text-indent: -99999px;
+  width: $role-width;
+}
+
+
+// List
+$roles: (
+  share         $role-width * 0,
+  peer          $role-width * 1,
+  post          $role-width * 2,
+  global-1      $role-width * 3,
+  personas      $role-width * 4,
+  branding      $role-width * 5,
+  user-stories  $role-width * 6,
+  whiteboarding $role-width * 7,
+  qa            $role-width * 8,
+  hosting       $role-width * 9,
+  security      $role-width * 10
+);
+
+
+// Loop
+@each $role in $roles{
+  $name:      nth($role, 1);
+  $position:  nth($role, 2);
+
+  .#{$name}{
+    background-position: -($position * 1) 0;
+    @extend %role-icon;
+  }
+}

@@ -32,7 +32,6 @@ jQuery(function(){
 
 // Onscroll fix element
 var elementPosition = $('.affixed').offset();
-
 $(window).scroll(function(){
   if($(window).scrollTop() > elementPosition.top){
     $('.affixed').addClass('is-affixed');

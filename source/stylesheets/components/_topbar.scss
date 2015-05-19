@@ -91,6 +91,7 @@ $mobile-panel-link-color: $black-base;
 
 
 .sub-menu{
+  @include animation(fade-in 0.2s ease-in);
   @include box-shadow(0 3px 10px, rgba(0, 0, 0, 0.3));
   @include position(absolute, 30px null null null);
   @include rem(padding, 0 10px 10px);
