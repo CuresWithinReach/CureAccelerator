@@ -13,6 +13,7 @@ $headers: (
 // Page Header structure
 .page-header{
   @include clearfix;
+  @include rem(margin-top, 78px);
 
   @each $header in $headers{
     $type:   nth($header, 1);
@@ -41,17 +42,21 @@ $headers: (
 
 // Homepage Header styles
 .home-header{
-  @include rem(padding, 90px 10px);
+  @include rem(padding, 20px 10px);
   background: transparent image-url('map-img.png') 50% 50% no-repeat;
   background-color: #FAFAF7;
   background-size: contain;
   border-top: 1px solid $white-dark;
   text-align: center;
 
+  @include media($tablet){ @include rem(padding, 110px 10px); }
+
   .title{
-    @include span-columns(8 of 12);
-    @include shift(2 of 12);
-    @include text-shadow(0 5px 10px, rgba(0, 0, 0, 0.15));
+    @include media($tablet){
+      @include span-columns(8 of 12);
+      @include shift(2 of 12);
+      @include text-shadow(0 5px 10px, rgba(0, 0, 0, 0.15));
+    }
   }
 
   .header-content__description{ @include row; }

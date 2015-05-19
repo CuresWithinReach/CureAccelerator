@@ -22,8 +22,11 @@ html, body{ overflow-x: hidden; }
 .page-section--divider{
   @include outer-container();
   @include rem(margin, 80px auto);
+  @include rem(padding, 0 20px);
   border: none;
   border-bottom: 1px solid $grey-light;
+
+  @include media($tablet){ padding: 0; }
 }
 
 
@@ -40,10 +43,16 @@ html, body{ overflow-x: hidden; }
 
   .title{
     @include font-type($primary-sans-serif, normal, 300);
+    @include rem(padding, 0 20px);
     @include s-alpha;
-    @include span-columns(8 of 12);
-    @include shift(2 of 12);
+    @include span-columns(4 of 4);
     text-align: center;
+
+    @include media($tablet){
+      @include span-columns(8 of 12);
+      @include shift(2 of 12);
+      padding: 0;
+    }
   }
 
   .text{
@@ -61,8 +70,10 @@ html, body{ overflow-x: hidden; }
 .section--tag{ @include rem(margin, 15px 0 30px);
 }
 
+
 // Sidebar and Column layout
 .sidebar{
+  @include rem(margin-bottom, 50px);
   @include rem(padding, 0 20px);
   width: 100%;
 
@@ -72,7 +83,7 @@ html, body{ overflow-x: hidden; }
 
     &.affixed{
       @include position(absolute); width: 14.7%;
-      &.is-affixed{ position: fixed; top: 30px; }
+      &.is-affixed{ @include position(fixed, 100px null null null null); }
     }
   }
 
@@ -125,7 +136,10 @@ html, body{ overflow-x: hidden; }
 
 // Grid Layout
 .grid-layout {
+  @include rem(padding, 0 20px);
   @include rem(margin-top, 20px);
+
+  @include media($tablet){ padding: 0; }
 
   .grid-item--title {
     @include rem(margin-bottom, 5px);
@@ -141,5 +155,7 @@ html, body{ overflow-x: hidden; }
       @include rem(margin-right, 20px);
       float: left;
     }
+
+    p { overflow: hidden; }
   }
 }

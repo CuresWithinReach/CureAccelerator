@@ -31,11 +31,13 @@ jQuery(function(){
 
 
 // Onscroll fix element
-var elementPosition = $('.affixed').offset();
-$(window).scroll(function(){
-  if($(window).scrollTop() > elementPosition.top){
-    $('.affixed').addClass('is-affixed');
-  } else {
-    $('.affixed').removeClass('is-affixed');
-  }
-});
+if ($('body').hasClass('privacy') || $('body').hasClass('faq')){
+  var elementPosition = $('.affixed').offset();
+  $(window).scroll(function(){
+    if($(window).scrollTop() > elementPosition.top){
+      $('.affixed').addClass('is-affixed');
+    } else {
+      $('.affixed').removeClass('is-affixed');
+    }
+  });
+}

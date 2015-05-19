@@ -82,5 +82,5 @@ strong { @include font-type(inherit, normal, 700);  }
 
 
 // Type Sizes
-.big{ @include s-giga; }
+.big{ font-size: 35px;  @include media($tablet){ @include s-giga; } }
 .small{ @include s-hotel; }

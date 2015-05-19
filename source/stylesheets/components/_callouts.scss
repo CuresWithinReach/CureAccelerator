@@ -27,19 +27,40 @@ $callouts: (
 .callout--container{
   @include position(relative);
   @include outer-container();
+  text-align: center;
 
-  .one-third{ @include span-columns(3 of 12); @include shift(1 of 12); }
-  .two-third{ @include span-columns(8 of 12); }
+  @include media($tablet-landscape){ text-align: inherit; }
+
+  .one-third{
+    @include rem(padding, 0 20px);
+    @include span-columns(4 of 4);
+
+    @include media($tablet-landscape){
+      @include span-columns(3 of 12);
+      @include shift(1 of 12); }
+    }
+
+  .two-third{
+    @include rem(padding, 0 20px);
+    @include span-columns(4 of 4);
+
+    @include media($tablet-landscape){
+      @include span-columns(8 of 12);
+    }
+  }
 
   .divider{
     @include position(absolute, null 27% null null);
     background-color: $green-dark;
+    display: none;
     height: 100%;
     width: 1px;
+
+    @include media($tablet-landscape){ display: block; }
   }
 
   .text{ @include s-charlie; line-height: 30px; }
 
   .logo-container{ @include rem(margin-top, 15px); }
-  .footnote-logo{ @include rem(margin-top, 10px); }
+  .footnote-logo{ @include rem(margin-top, 25px); }
 }
