@@ -1,9 +1,7 @@
 ---
-build/images/logos/logo-3d79d607.png: 2015-05-19 14:25:42.000000000 -05:00
-build/images/logos/logo_2x-e449362e.png: 2015-05-19 14:25:41.000000000 -05:00
-build/images/logos/robert-johnson-logo-deafada2.png: 2015-05-19 14:25:41.000000000
-  -05:00
-build/images/logos/robert-johnson-logo_2x-34f566a4.png: 2015-05-19 14:25:41.000000000
-  -05:00
-build/images/map-img-f9a3d7c9.png: 2015-05-19 14:26:20.000000000 -05:00
-build/images/test-user-img-c9851ee1.png: 2015-05-19 14:25:46.000000000 -05:00
+build/images/logos/logo.png: 2015-05-19 14:56:49.000000000 -05:00
+build/images/logos/logo_2x.png: 2015-05-19 14:56:48.000000000 -05:00
+build/images/logos/robert-johnson-logo.png: 2015-05-19 14:56:48.000000000 -05:00
+build/images/logos/robert-johnson-logo_2x.png: 2015-05-19 14:56:49.000000000 -05:00
+build/images/map-img.png: 2015-05-19 14:57:09.000000000 -05:00
+build/images/test-user-img.png: 2015-05-19 14:56:53.000000000 -05:00
