@@ -1,0 +1,44 @@
+// Homepage Styles
+// ========================================
+
+// UI Cards
+.featured-ui--container{
+  @include clearfix;
+  @include position(relative);
+  @include rem(margin-top, 40px);
+  @include rem(height, 400px);
+
+  .featured-ui--cards{
+    @include position(absolute, 75px null null 50%);
+    margin-left: -1040px;
+    width: 2000px;
+    white-space: nowrap;
+  }
+
+  .featured-ui--card{
+    @include rem(height, 260px);
+    @include rem(padding, 10px);
+    @include rem(width, 300px);
+    border: 1px solid $white-dark;
+    border-radius: 1px;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .featured-ui--img{
+    background-color: $white-dark;
+    border: none;
+    height: 100%;
+    width: 100%;
+  }
+
+  .featured-ui--card__main{
+    @include box-shadow(0 0 10px, rgba(0, 0, 0, 0.15));
+    @include position(absolute, 0 0 null 0);
+    @include rem(height, 390px);
+    @include rem(width, 452px);
+    background-color: $white-dark;
+    margin: 0 auto;
+    z-index: 10;
+  }
+}

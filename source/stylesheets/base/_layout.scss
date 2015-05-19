@@ -78,12 +78,15 @@ html, body{ overflow-x: hidden; }
   width: 100%;
 
   @include media($tablet-landscape){
-    @include span-columns(2 of 12);
     padding: 0;
 
     &.affixed{
-      @include position(absolute); width: 14.7%;
-      &.is-affixed{ @include position(fixed, 100px null null null null); }
+      @include position(absolute); width: 25%;
+
+      &.is-affixed{
+        @include animation(slide-in-up 0.3s ease-in);
+        @include position(fixed, 100px null null null null);
+      }
     }
   }
 
