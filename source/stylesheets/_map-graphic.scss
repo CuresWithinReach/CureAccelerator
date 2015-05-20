@@ -15,17 +15,24 @@ $dots: (
 
 // Dot Animation
 @include keyframes(pulse) {
- 0%   { @include transform(scale(0));    opacity: 0.0; }
- 25%  { @include transform(scale(0));    opacity: 0.1; }
- 50%  { @include transform(scale(0.1));  opacity: 0.3; }
- 75%  { @include transform(scale(0.5));  opacity: 0.5; }
- 100% { @include transform(scale(1));    opacity: 0.0; }
+ 0%   { @include transform(scale(0));     opacity: 0.0; }
+ 25%  { @include transform(scale(0.1));   opacity: 0.1; }
+ 35%  { @include transform(scale(0.2));   opacity: 0.2; }
+ 50%  { @include transform(scale(0.3));   opacity: 0.5; }
+ 65%  { @include transform(scale(0.5));   opacity: 0.8; }
+ 80%  { @include transform(scale(0.8));   opacity: 0.5; }
+ 90%  { @include transform(scale(1));     opacity: 0.2; }
+ 100% { @include transform(scale(1));     opacity: 0.0; }
 }
 
 
 // Base Dot
 .map-container {
-  @include position(relative);
+  @include clearfix;
+  @include position(absolute, 150px 0 null 0);
+  @include rem(height, 400px);
+  @include rem(width, 750px);
+  margin: 0 auto;
 
   %dot {
     display:none;
@@ -61,38 +68,16 @@ $dots: (
   }
 }
 
-.dot-1 {
-  left: 12.25%;
-  top: 6.65%;
-}
-
-.dot-2 {
-  left: 50.5%;
-  top: 15.5%;
-
-}
-
-.dot-3 {
-  left: 46.75%;
-  top: 43.75%;
-}
-
-.dot-4 {
-  left: 78.5%;
-  top: 47.5%;
-}
-
-.dot-5 {
-  left: 14.5%;
-  top: 56.5%;
-}
-
-.dot-6 {
-  left: 42.5%;
-  top: 66.5%;
-}
-
-.dot-7 {
-  left: 77.5%;
-  top: 77.5%;
-}
+.dot-1  { left:   12.25%;  top: 6.65%;  }
+.dot-2  { left:   15.25%;  top: 12.65%; }
+.dot-3  { left:   -0.75%;  top: 22.65%; }
+.dot-4  { left:   6.25%;   top: 42.65%; }
+.dot-5  { left:   15.25%;  top: 72.65%; }
+.dot-6  { right:  36.25%;  top: 0;      }
+.dot-7  { right:  15.25%;  top: 12.65%; }
+.dot-8  { right:  8.25%;   top: 22.65%; }
+.dot-9  { right:  50.25%;  top: 5%;     }
+.dot-10 { right:  8.25%;   top: 80.65%; }
+.dot-11 { left:   15.25%;  top: 90.65%; }
+.dot-12 { right:  7%;      top: 90.65%; }
+.dot-13 { right:  14%;     top: 81.65%; }
