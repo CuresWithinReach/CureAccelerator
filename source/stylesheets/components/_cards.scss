@@ -35,7 +35,15 @@ $card-shadow-spread:    0 0 10px;
       img{ width: 60%; }
     }
   }
-  &.one-third{ @include span-columns(4 of 12); }
+  &.one-third{
+    display: inline-block;
+    @include span-columns(3 of 4);
+    @include shift(0.5 of 4);
+
+    @include media($tablet){ @include span-columns(4 of 12); @include shift(0); }
+
+    img{ width: 80%; }
+  }
 
   &.hover:hover{
     @include box-shadow(0 0 5px, rgba(0, 0, 0, 0.15));

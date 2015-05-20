@@ -2,13 +2,23 @@
 title: CureAccelerator
 ---
 <section role="banner" aria-label="repurposing-research" class="page-header home-header">
-  <div class="header-content__container center">
+  <div class="header-content__container map-container center">
     <h2 id="repurposing-research" class="title uppercase big">Repurposing</h2>
     <h3 class="title uppercase">Speed Treatments to patients</h3>
     <div class="header-content__description">
       <h4 class="title">Researchers, funders, clinicians and others harnessing the power of repurposing research</h4>
     </div>
     <%= link_to 'Sign Up', ' https://app.cureaccelerator.org/registration', class: 'button button--white button--header' %>
+    <span class="dot-blue dot-1"></span>
+    <span class="dot-green dot-2"></span>
+    <span class="dot-pink dot-3"></span>
+    <span class="dot-brown dot-4"></span>
+    <span class="dot-purple dot-5"></span>
+    <span class="dot-green-alt dot-6"></span>
+    <span class="dot-pink dot-7"></span>
+    <span class="dot-blue dot-8"></span>
+    <span class="dot-green dot-9"></span>
+    <span class="dot-brown dot-10"></span>
   </div>
 </section>
 <section class="callout--green" role="region" aria-labelledby="about-cure-accelerator">
@@ -33,14 +43,14 @@ title: CureAccelerator
   </div>
 </section>
 <section class="featured-ui--container">
-  <%= image_tag '#', class: 'featured-ui--card__main' %>
+  <%= image_tag 'ui/ui-2-img.jpg', class: 'featured-ui--card__main' %>
   <ul class="featured-ui--cards">
-    <li class="featured-ui--card"><%= image_tag '#', class: 'featured-ui--img' %></li>
-    <li class="featured-ui--card"><%= image_tag '#', class: 'featured-ui--img' %></li>
-    <li class="featured-ui--card"><%= image_tag '#', class: 'featured-ui--img' %></li>
-    <li class="featured-ui--card"><%= image_tag '#', class: 'featured-ui--img' %></li>
-    <li class="featured-ui--card"><%= image_tag '#', class: 'featured-ui--img' %></li>
-    <li class="featured-ui--card"><%= image_tag '#', class: 'featured-ui--img' %></li>
+    <li class="featured-ui--card"><%= image_tag 'ui/ui-1-img.jpg', class: 'featured-ui--img' %></li>
+    <li class="featured-ui--card"><%= image_tag 'ui/ui-7-img.jpg', class: 'featured-ui--img' %></li>
+    <li class="featured-ui--card"><%= image_tag 'ui/ui-3-img.jpg', class: 'featured-ui--img' %></li>
+    <li class="featured-ui--card"><%= image_tag 'ui/ui-4-img.jpg', class: 'featured-ui--img' %></li>
+    <li class="featured-ui--card"><%= image_tag 'ui/ui-5-img.jpg', class: 'featured-ui--img' %></li>
+    <li class="featured-ui--card"><%= image_tag 'ui/ui-6-img.jpg', class: 'featured-ui--img' %></li>
   </ul>
   </div>
 </section>
@@ -53,15 +63,15 @@ title: CureAccelerator
    <div class="page-section--body">
     <h2 class="title">Featured User Roles</h2>
     <% link_to 'clinicians.html', class: 'card one-third hover' do %>
-      <%= image_tag 'test-user-img.png', alt: 'Clinicans', class: 'card--border__green-alt-1' %>
+      <%= image_tag 'roles/clinician-img.png', alt: 'Clinicans', class: 'card--border__green-alt-1' %>
       <h5 class="card--title__green-alt-1">Clinicans</h5>
     <% end %>
     <% link_to 'researchers.html', class: 'card one-third hover' do %>
-      <%= image_tag 'test-user-img.png', alt: 'Researchers', class: 'card--border__green' %>
+      <%= image_tag 'roles/researcher-img.png', alt: 'Researchers', class: 'card--border__green' %>
       <h5 class="card--title__green">Researchers</h5>
     <% end %>
     <% link_to 'funders.html', class: 'card one-third hover' do %>
-      <%= image_tag 'test-user-img.png', alt: 'Funders', class: 'card--border__purple' %>
+      <%= image_tag 'roles/funders-img.png', alt: 'Funders', class: 'card--border__purple' %>
       <h5 class="card--title__purple">Funders</h5>
     <% end %>
   </div>

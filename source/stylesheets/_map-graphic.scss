@@ -1,0 +1,98 @@
+// Map Graphic Styles
+// ========================================
+
+
+// Dot Types
+$dots: (
+  ('blue',       $blue-base,    2s,    2s)
+  ('brown',      $brown-base,   4s,    2s)
+  ('green',      $green-base,   6s,    2.5s)
+  ('green-alt',  $green-alt-1,  8s,    3.2s)
+  ('pink',       $pink-base,    3.5s,  1.75s)
+  ('purple',     $purple-base,  5.5s,  2.25s)
+);
+
+
+// Dot Animation
+@include keyframes(pulse) {
+ 0%   { @include transform(scale(0));    opacity: 0.0; }
+ 25%  { @include transform(scale(0));    opacity: 0.1; }
+ 50%  { @include transform(scale(0.1));  opacity: 0.3; }
+ 75%  { @include transform(scale(0.5));  opacity: 0.5; }
+ 100% { @include transform(scale(1));    opacity: 0.0; }
+}
+
+
+// Base Dot
+.map-container {
+  @include position(relative);
+
+  %dot {
+    display:none;
+
+    @include media($tablet) {
+      @include animation-iteration-count(infinite);
+      @include position(absolute);
+      @include rem(height, 20px);
+      @include rem(width, 20px);
+      border-radius: 40px;
+      display: block;
+      opacity: 0;
+      z-index: 1;
+    }
+  }
+}
+
+
+// Color Dots
+@each $dot in $dots{
+  $type:  nth($dot, 1);
+  $color: nth($dot, 2);
+  $delay: nth($dot, 3);
+  $time:  nth($dot, 4);
+
+  .dot-#{$type}{
+    @extend %dot;
+    @include animation(pulse 4s linear);
+    @include animation-delay($delay);
+    @include animation-duration($time);
+    background-color: $color;
+    border: 5px solid $color;
+  }
+}
+
+.dot-1 {
+  left: 12.25%;
+  top: 6.65%;
+}
+
+.dot-2 {
+  left: 50.5%;
+  top: 15.5%;
+
+}
+
+.dot-3 {
+  left: 46.75%;
+  top: 43.75%;
+}
+
+.dot-4 {
+  left: 78.5%;
+  top: 47.5%;
+}
+
+.dot-5 {
+  left: 14.5%;
+  top: 56.5%;
+}
+
+.dot-6 {
+  left: 42.5%;
+  top: 66.5%;
+}
+
+.dot-7 {
+  left: 77.5%;
+  top: 77.5%;
+}

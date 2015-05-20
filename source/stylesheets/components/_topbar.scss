@@ -23,12 +23,12 @@ $mobile-panel-link-color: $black-base;
 .topbar{
   @include clearfix;
   @include position(fixed, 0 null null null);
-  @include rem(padding, $topbar-padding/2);
+  @include rem(padding, 20px $topbar-padding/2 $topbar-padding/2);
   @include transition(top 0.3s ease-in-out);
   background: $topbar-background;
   height: $topbar-height;
   width: $topbar-width;
-  z-index: 1;
+  z-index: 1000;
 
   @include media($tablet-landscape){ @include rem(padding, $topbar-padding); }
 
@@ -114,7 +114,7 @@ $mobile-panel-link-color: $black-base;
 
 // Mobile Menu
 .mobile--link{
-  @include position(absolute, 15px null null 15px);
+  @include position(absolute, 25px null null 15px);
   @include rem(height, $mobile-link-height);
   @include rem(padding, $mobile-link-padding);
   @include rem(width, $mobile-link-width);

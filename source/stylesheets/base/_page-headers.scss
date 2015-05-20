@@ -97,10 +97,10 @@ $headers: (
   }
 
   .user-role-img{
-    @include rem(margin, 25px auto -5px);
+    @include rem(margin, 25px auto -15px);
 
     @include media($tablet-landscape){
-      width: 100%;
+      width: 150%;
     }
   }
 }
