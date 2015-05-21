@@ -5,19 +5,13 @@
         <i><%= image_tag 'icons/menu-icon.svg', class: 'mobile--show' %></i>
       <% end %>
       <% link_to '/' do %>
-        <picture>
-          <source srcset="images/logos/logo.png 1x, images/logos/logo_2x.png 2x" />
-          <%= image_tag 'logos/logo.png', alt: 'Cure Accelerator', class: 'logo' %>
-        </picture>
+        <%= image_tag 'logos/logo_2x.png', class: 'logo' %>
       <% end %>
     </div>
     <div class="js-menu mobile--panel">
       <ul class="navigation--right">
-        <picture class="mobile--show">
-          <source srcset="images/logos/logo.png 1x, images/logos/logo_2x.png 2x" />
-          <%= image_tag 'logos/logo.png', alt: 'Cure Accelerator', class: 'logo' %>
-        </picture>
-        <li>
+        <%= image_tag 'logos/logo_2x.png', class: 'mobile--show logo' %>
+        <li class="nav-link">
           <% link_to '#', class: 'dropdown-trigger mobile--hide' do %>
             Community <%= image_tag 'icons/dropdown-icon.svg', class: 'icon' %>
           <% end %>
@@ -33,9 +27,9 @@
           <li><%= link_to 'Researchers', 'researchers.html', class: 'mobile--show' %></li>
           <li><%= link_to 'Funders', 'funders.html', class: 'mobile--show' %></li>
         </div>
-        <li><%= link_to 'FAQ', 'faq.html' %></li>
-        <li><%= link_to 'Contact', 'contact.html' %></li>
-        <li><%= link_to 'Sign In', 'https://app.cureaccelerator.org/login' %></li>
+        <li class="nav-link"><%= link_to 'FAQ', 'faq.html' %></li>
+        <li class="nav-link"><%= link_to 'Contact', 'contact.html' %></li>
+        <li class="nav-link"><%= link_to 'Sign In', 'https://app.cureaccelerator.org/login' %></li>
         <li><%= link_to 'Sign Up', 'https://app.cureaccelerator.org/registration', class: 'button button--primary' %></li>
       </ul>
     </div>

@@ -82,7 +82,6 @@ $mobile-panel-link-color: $black-base;
       color: $black-base;
       display: inline-block;
       padding: 0;
-
       vertical-align: middle;
 
       .button { @include s-golf; margin-top: 0; }
@@ -95,6 +94,8 @@ $mobile-panel-link-color: $black-base;
 
     a{ @include font-type($primary-sans-serif, normal, 700); }
   }
+
+  .nav-link{ margin-top: -5px; }
 }
 
 
