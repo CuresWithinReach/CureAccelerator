@@ -2,7 +2,7 @@
 # Gitignore
 ###
 
-# Build director
+# Build directory
 /build
 
 # Bower directory

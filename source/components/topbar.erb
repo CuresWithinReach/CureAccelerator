@@ -1,15 +1,15 @@
 <header class="topbar" role="topbar">
   <nav class="navigation" role="site navigation">
     <div class="navigation--left">
-      <a href="#" class="mobile--link mobile--show js-menu-trigger sliding-menu-buton">
+      <% link_to '#', class: 'mobile--link mobile--show js-menu-trigger sliding-menu-buton' do %>
         <i><%= image_tag 'icons/menu-icon.svg', class: 'mobile--show' %></i>
-      </a>
-      <a href="/">
+      <% end %>
+      <% link_to '/' do %>
         <picture>
-          <source srcset="<%= current_page.url %>images/logos/logo.png 1x, <%= current_page.url %>images/logos/logo_2x.png 2x" />
+          <source srcset="images/logos/logo.png 1x, images/logos/logo_2x.png 2x" />
           <%= image_tag 'logos/logo.png', alt: 'Cure Accelerator', class: 'logo' %>
         </picture>
-      </a>
+      <% end %>
     </div>
     <div class="js-menu mobile--panel">
       <ul class="navigation--right">
