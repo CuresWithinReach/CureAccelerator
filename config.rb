@@ -23,7 +23,7 @@ configure :build do
   activate :minify_javascript
   activate :minify_html
   activate :asset_hash
-  activate :directory_indexes
+  # activate :directory_indexes
   activate :gzip
   activate :imageoptim
   activate :relative_assets

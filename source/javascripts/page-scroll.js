@@ -41,3 +41,15 @@ if ($('body').hasClass('privacy') || $('body').hasClass('faq')){
     }
   });
 }
+
+
+// Active element
+$(function () {
+  var $card_trigger = $('.card--trigger');
+  $card_trigger.on('click', function (e) {
+    var is_active = $('.card--trigger.is-active');
+    e.preventDefault();
+    is_active.removeClass('is-active');
+    $(this).addClass('is-active');
+  });
+});
