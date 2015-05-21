@@ -38,6 +38,7 @@ $headers: (
   @include media($tablet-landscape){ padding: 0; }
 
   .title__inverse{ color: $white-base; }
+  h3{ @include s-alpha; }
 }
 
 

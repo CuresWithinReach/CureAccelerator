@@ -158,8 +158,11 @@ html, body{ overflow-x: hidden; }
       @include omega(2n);
     }
     .user-role-icon {
-      @include rem(margin-right, 20px);
-      float: left;
+      display: block;
+      @include media($tablet){
+        @include rem(margin-right, 20px);
+        float: left;
+      }
     }
 
     p { overflow: hidden; }

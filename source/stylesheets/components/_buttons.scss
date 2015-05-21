@@ -6,6 +6,7 @@
   @include font-type($primary-sans-serif, normal, 700);
   @include position(relative, null null null null);
   @include s-foxtrot;
+  @include rem(margin-bottom, 15px);
   @include rem(padding, 10px 12px);
   @include transition (all 0.3s ease-in-out);
   border-radius: 2px;
