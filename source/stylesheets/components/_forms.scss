@@ -16,6 +16,7 @@ fieldset{
 
 // Inputs
 #{$all-text-inputs},
+input,
 select,
 textarea{
   @include appearance(none);
