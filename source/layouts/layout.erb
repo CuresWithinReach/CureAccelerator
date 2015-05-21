@@ -10,8 +10,11 @@
     <% if current_page.data.description %>
       <meta name="description" content="<%= current_page.data.description %>" />
     <% end %>
-
-    <link href="http://cureaccelerator.org/<%= current_page.path.gsub('.html', '') unless current_page.path == 'index.html' %>" rel="canonical">
+    <% if current_page.path == "index.html" %>
+      <link href="http://cureaccelerator.org/" rel="canonical">
+    <% else %>
+      <link href="http://cureaccelerator.org/<%= current_page.path.gsub('.html', '') %>" rel="canonical">
+    <% end %>
 
     <!-- Stylesheets -->
     <%= stylesheet_link_tag "application" %>
