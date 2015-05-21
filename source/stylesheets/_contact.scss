@@ -1,0 +1,31 @@
+// Contact Page Styles
+// ========================================
+
+
+// Variables
+$contact-card-border: 1px solid $purple-base;
+$contact-card-color: $purple-base;
+
+
+// Page structure
+.contact-form--container{
+  @include media($tablet){
+    @include span-columns(7 of 12);
+  }
+}
+
+.contact-form--sidebar {
+  text-align: left;
+
+  @include media($tablet){
+    @include shift(1 of 12);
+    @include span-columns(4 of 12);
+  }
+
+  .contact-card--title{
+    @include rem(padding-bottom, 10px);
+    border-bottom: $contact-card-border;
+    color: $contact-card-color;
+  }
+
+}
