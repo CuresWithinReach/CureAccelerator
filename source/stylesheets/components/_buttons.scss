@@ -84,3 +84,22 @@
     display: inline-block;
   }
 }
+
+
+// Button Scroll
+.button--scroll{
+  @include box-shadow(0 4px 15px, rgba(0, 0, 0, 0.25));
+  @include position(absolute, null 10% -25px null);
+  @include rem(height, 45px);
+  @include rem(width, 45px);
+  background-color: $white-base;
+  border-radius: 30em;
+
+  &:hover{ opacity: 0.85; }
+
+  .icon{
+    @include position(absolute, 20px 0 null 0);
+    @include rem(width, 20px);
+    margin: 0 auto;
+  }
+}

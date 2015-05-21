@@ -29,7 +29,7 @@ $dots: (
 // Base Dot
 .map-container {
   @include clearfix;
-  @include position(absolute, 150px 0 null 0);
+  @include position(absolute, 75px 0 null 0);
   @include rem(height, 400px);
   @include rem(width, 750px);
   margin: 0 auto;

@@ -13,6 +13,7 @@ $headers: (
 // Page Header structure
 .page-header{
   @include clearfix;
+  @include position(relative);
   @include rem(margin-top, 78px);
 
   @each $header in $headers{
@@ -43,7 +44,7 @@ $headers: (
 // Homepage Header styles
 .home-header{
   @include rem(padding, 20px 10px);
-  background: transparent image-url('map-img.png') 50% 50% no-repeat;
+  background: transparent image-url('map-img-2.png') 50% 50% no-repeat;
   background-color: #FAFAF7;
   background-size: contain;
   border-top: 1px solid $white-dark;
