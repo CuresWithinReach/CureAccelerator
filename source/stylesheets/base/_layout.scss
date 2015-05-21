@@ -27,6 +27,7 @@ html, body{ overflow-x: hidden; }
   width: 85%;
 
   @include media($tablet-landscape){ width: 100%; }
+
 }
 
 
@@ -68,6 +69,8 @@ html, body{ overflow-x: hidden; }
   border-top: 3px solid $pink-dark;
   margin: 0 auto;
   width: 50px;
+
+  &.white{ border-color: $white-base; }
 }
 
 .section--tag{ @include rem(margin, 15px 0 30px);

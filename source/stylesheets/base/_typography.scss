@@ -70,6 +70,18 @@ a {
   }
 }
 
+blockquote{
+  @include font-type($primary-sans-serif, normal, 300);
+  @include s-bravo;
+}
+
+cite{
+  @include font-type($secondary-sans-serif, normal, 700);
+  @include rem(margin-top, 15px);
+  @include s-foxtrot;
+  display: block;
+}
+
 
 // Type Styles
 em{ @include font-type(inherit, italic, inherit); }
@@ -84,3 +96,7 @@ strong { @include font-type(inherit, normal, 700);  }
 // Type Sizes
 .big{ font-size: 35px;  @include media($tablet){ @include s-giga; } }
 .small{ @include s-hotel; }
+
+
+// Type Colors
+.inverse{ color: $white-base; }

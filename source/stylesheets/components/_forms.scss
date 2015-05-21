@@ -39,6 +39,8 @@ textarea{
   }
 }
 
+input[type="submit"]{ width: inherit; }
+
 textarea,
 textarea[type="text"]{ height: 100px; }
 

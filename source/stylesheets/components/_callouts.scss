@@ -4,8 +4,10 @@
 
 // Callout types
 $callouts: (
-  ('green',  $green-base,  $white-base)
-  ('purple', $purple-base, $white-base)
+  ('green',     $green-base,  $white-base)
+  ('purple',    $purple-base, $white-base)
+  ('pink',      $pink-base,   $white-base)
+  ('pink-dark', $pink-dark,   $white-base)
 );
 
 
@@ -19,6 +21,8 @@ $callouts: (
     @include rem(padding, 50px 10px);
     background-color: $bg-1;
     color: $color;
+
+    &.offset{ @include rem(margin, 100px 0); @include rem(padding-top, 25px); }
   }
 }
 
