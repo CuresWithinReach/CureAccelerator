@@ -23,9 +23,6 @@
     <!-- <script src="//use.typekit.net/rts7ick.js" async=""></script> -->
     <script src="//use.typekit.net/ait7csm.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
-
-    <script> document.createElement( "picture" );</script>
-    <%= javascript_include_tag  "application" %>
   </head>
 
   <body class="<%= page_classes %>">
@@ -35,6 +32,7 @@
       <%= partial 'components/cta' %>
     </main>
     <%= partial 'components/footer' %>
+    <%= javascript_include_tag  "application" %>
   </body>
 
 </html>
