@@ -31,10 +31,12 @@ $card-shadow-spread:    0 0 10px;
       @include shift(0);
 
       &.shift{ @include shift(1 of 12); }
-
       img{ width: 60%; }
     }
+
+    img{ width: 80%; }
   }
+
   &.one-third{
     display: inline-block;
     @include span-columns(3 of 4);
@@ -50,6 +52,7 @@ $card-shadow-spread:    0 0 10px;
     opacity: 1;
   }
 }
+
 
 // User Card types
 $users: (
