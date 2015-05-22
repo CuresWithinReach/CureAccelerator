@@ -4,10 +4,10 @@
 
 // Callout types
 $callouts: (
-  ('green',     $green-base,  $white-base)
-  ('purple',    $purple-base, $white-base)
-  ('pink',      $pink-base,   $white-base)
-  ('pink-dark', $pink-dark,   $white-base)
+  ('green',     #82c2c0,      #437271,      $white-base)
+  ('purple',    $purple-base, $purple-dark, $white-base)
+  ('pink',      #d46786,      #784c58,      $white-base)
+  ('pink-dark', $pink-dark,   $pink-dark,   $white-base)
 );
 
 
@@ -15,11 +15,12 @@ $callouts: (
 @each $callout in $callouts{
   $type:   nth($callout, 1);
   $bg-1:   nth($callout, 2);
-  $color:  nth($callout, 3);
+  $bg-2:   nth($callout, 3);
+  $color:  nth($callout, 4);
 
   .callout--#{$type} {
+    @include linear-gradient(180deg, $bg-1, $bg-2);
     @include rem(padding, 50px 10px);
-    background-color: $bg-1;
     color: $color;
 
     &.offset{ @include rem(margin, 100px 0); @include rem(padding-top, 25px); }
@@ -55,7 +56,7 @@ $callouts: (
 
   .divider{
     @include position(absolute, null 27% null null);
-    background-color: $green-dark;
+    background-color: #437271;
     display: none;
     height: 100%;
     width: 1px;
