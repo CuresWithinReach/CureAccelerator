@@ -58,8 +58,8 @@ $headers: (
     @include animation(fade-in-up 2s ease-in);
 
     @include media($tablet){
-      @include span-columns(8 of 12);
-      @include shift(2 of 12);
+      @include span-columns(7 of 12);
+      @include shift(2.5 of 12);
       @include text-shadow(0 5px 10px, rgba(0, 0, 0, 0.15));
     }
   }

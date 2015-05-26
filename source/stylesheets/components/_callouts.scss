@@ -4,6 +4,7 @@
 
 // Callout types
 $callouts: (
+  ('brown',     $brown-base,  $brown-base,  $white-base)
   ('green',     #82c2c0,      #437271,      $white-base)
   ('purple',    $purple-base, $purple-dark, $white-base)
   ('pink',      #d46786,      #784c58,      $white-base)
