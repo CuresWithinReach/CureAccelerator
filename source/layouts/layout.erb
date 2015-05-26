@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <title><%= current_page.data.title || "CureAccelerator" %></title>
-    <link href="images/favicon.png" rel="shortcut icon">
+    <%= favicon_tag 'images/favicon.png' %>
     <% if current_page.data.description %>
       <meta name="description" content="<%= current_page.data.description %>" />
     <% end %>
