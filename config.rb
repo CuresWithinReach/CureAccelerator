@@ -1,6 +1,7 @@
 ###
 # Config
 ###
+page "CNAME", layout: false
 
 # Reload the browser
 configure :development do
