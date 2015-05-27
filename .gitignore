@@ -2,8 +2,5 @@
 # Gitignore
 ###
 
-# Build directory
-/build
-
 # Bower directory
 /bower_components
