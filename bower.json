@@ -22,6 +22,5 @@
   ],
   "dependencies": {
     "jquery": "~2.1.4",
-    "picturefill": "~2.3.1"
   }
 }
