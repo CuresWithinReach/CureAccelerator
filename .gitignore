@@ -6,3 +6,12 @@
 /bower_components
 
 .DS_Store
+
+# Ignore bundler config
+/.bundle
+
+# Ignore the build directory
+/build
+
+# Ignore Sass' cache
+/.sass-cache
