@@ -97,3 +97,24 @@
   @include rem(margin-bottom, 15px);
   width: 100% !important;
 }
+
+//Event Block
+
+.event--block{
+  @include rem(margin, 100px 0 0 0);
+
+  @include media($tablet-landscape){ @include rem(margin, 100px 0 0 100px); }
+
+  .one-third img{
+    @include rem(margin-bottom, 15px);
+    width: 50%;
+
+    @include media($tablet-landscape){ width: 100%; }
+  }
+
+  h5{ @include rem(margin-bottom, 15px); }
+  p{
+    @include media($tablet-landscape){ @include rem(margin-bottom, 3px); }
+  }
+  .button{ @include rem(margin-top, 15px); }
+}
