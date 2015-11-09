@@ -1,1 +1,10 @@
-<svg width="12" height="8" viewBox="0 0 12 8" xmlns="http://www.w3.org/2000/svg"><title>dropdown-icon</title><path d="M6.217 6.143L1.435 1.43l4.782 4.713L11 1.43 6.217 6.142zm0 0l.02.02-.02-.02-.02.02.02-.02z" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" fill-rule="evenodd"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="8px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>dropdown-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M6.2173913,6.14285714 L1.43478261,1.42857143 L6.2173913,6.14285714 L11,1.42857143 L6.2173913,6.14285714 Z M6.2173913,6.14285714 L6.23711329,6.16229739 L6.2173913,6.14285714 L6.19766932,6.16229739 L6.2173913,6.14285714 Z" id="dropdown-icon" stroke="#4A4A4A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

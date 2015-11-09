@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-149 90 18 12"><title>menu-icon</title><path fill="#4A4A4A" d="M-149 102h18v-2h-18v2zm0-5h18v-2h-18v2zm0-7v2h18v-2h-18z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-149 90 18 12"
+	 enable-background="new -149 90 18 12" xml:space="preserve">
+<title>menu-icon</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1" sketch:type="MSPage">
+	<g id="menu-icon" sketch:type="MSLayerGroup">
+		<path id="Shape" sketch:type="MSShapeGroup" fill="#4A4A4A" d="M-149,102h18v-2h-18V102L-149,102z M-149,97h18v-2h-18V97L-149,97z
+			 M-149,90v2h18v-2H-149L-149,90z"/>
+	</g>
+</g>
+</svg>
