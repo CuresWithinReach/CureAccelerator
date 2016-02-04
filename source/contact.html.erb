@@ -21,11 +21,13 @@ description: "Please contact us to learn more about the CureAccelerator platform
       <fieldset>
         <fieldset>
         <label>Your Email Address</label>
-        <input type="email" name="email" required>
+        <input type="email" name="_replyto" required>
       </fieldset>
         <label>Your Message</label>
         <textarea name="message" required></textarea>
       </fieldset>
+      <input type="hidden" name="_subject" value="Cure Accelerator Contact" />
+      <input type="hidden" name="_next" value="/thank-you" />
       <input type="submit" value="Send" class="button button--secondary">
     </form>
   </div>
