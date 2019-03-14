@@ -10,6 +10,6 @@ gem 'wdm', '~> 0.1.0', :platforms => [:mswin, :mingw]
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
 #Added Gems
-gem 'bourbon'
-gem 'neat'
+gem 'bourbon', '4.2.2'
+gem 'neat', '1.7.2'
 gem 'middleman-gh-pages'
